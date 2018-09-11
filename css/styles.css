@@ -7,3 +7,8 @@
 nav{
     width: 85%;
 }
+
+#primerMenu .menu-izquierdo li{
+    width: 40%;
+    font-size: 14px;
+}
