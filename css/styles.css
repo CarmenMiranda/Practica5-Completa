@@ -4,11 +4,28 @@
     font-family: 'Roboto', sans-serif;
 }
 
-nav{
+nav, .main{
     width: 85%;
 }
 
 #primerMenu .menu-izquierdo li{
     width: 40%;
     font-size: 14px;
+}
+
+.text-danger{
+    color: #c00 !important;
+}
+
+.btn-danger, .bg-danger{
+    background-color: #c00 !important;
+}
+
+.search{
+    width: 35%;
+}
+
+.comercial-dibujo{
+    width: 728px;
+    height: 90px;
 }
