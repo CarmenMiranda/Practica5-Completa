@@ -9,7 +9,6 @@ nav, .main{
 }
 
 #primerMenu .menu-izquierdo li{
-    width: 40%;
     font-size: 14px;
 }
 
@@ -28,4 +27,19 @@ nav, .main{
 .comercial-dibujo{
     width: 728px;
     height: 90px;
+}
+
+.nombreAgenda{
+    width:10%;
+    font-size: 14px;
+}
+
+.enDirecto .titulo, .loMejor .titulo{
+    font-size: 13px;
+    width: 30%;
+}
+
+.enDirecto .info, .loMejor .info{
+    font-size: 13px;
+    width: 70%;
 }

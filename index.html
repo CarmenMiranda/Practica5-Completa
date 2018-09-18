@@ -14,63 +14,77 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light mx-auto" id="primerMenu">
-                <ul class="navbar-nav float-left menu-izquierdo">
-                    <li class="nav-item w-25">
-                        <a class="nav-link" href="#">
-                            <div class="row">
-                                <div class="col-3 p-0">
-                                    <img src="img/portada de hoy.jpg" alt="" height="45">
-                                </div>
-                                <div class="col-8 p-0 pl-2">
-                                    La portada de hoy
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item w-25">
-                        <a class="nav-link" href="#">
-                            <div class="row">
-                                <div class="col-4 p-0 pl-2">
-                                    <img src="img/Radio_Marca.png" alt="" height="45">
-                                </div>
-                                <div class="col-6 mr-1 ml-3 p-0">
-                                    Radio MARCA
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <div class="row">
-                                <div class="col-3 p-0 mr-2">
-                                    <img src="img/logo_fantasy.png" alt="" height="45">
-                                </div>
-                                <div class="col-8 pl-0">
-                                    Laliga Fantasy MARCA
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <a class="navbar-brand" href="#"><img src="img/marca-logo-80.png" alt="" height="30"></a>
-                
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown border rounded">
-                        <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="img/ESP.jpg" alt="" height="20px"> ES
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item disabled" href="#"><img src="img/ESP.jpg" alt="" height="20px"> ES (España)</a>
-                            <a class="dropdown-item" href="#"><img src="img/MX.png" alt="" height="20px"> MX (México)</a>
-                            <a class="dropdown-item" href="#"><img src="img/CO.png" alt="" height="20px"> CO (Colombia)</a>
-                            <a class="dropdown-item" href="#"><img src="img/AR.png" alt="" height="20px"> AR (Argentina)</a>
-                            <a class="dropdown-item" href="#"><img src="img/EN.png" alt="" height="20px"> EN (English)</a>
+            <nav class="navbar navbar-expand-md navbar-light mx-auto" id="primerMenu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primeraBarra" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="primeraBarra">
+                    <div class="row w-100">
+                        <div class="col-md-5 col-12 p-0">
+                            <ul class="navbar-nav float-left menu-izquierdo w-100">
+                                <li class="nav-item w-25">
+                                    <a class="nav-link" href="#">
+                                        <div class="row">
+                                            <div class="col-3 p-0">
+                                                <img src="img/portada de hoy.jpg" alt="" height="45">
+                                            </div>
+                                            <div class="col-8 p-0 pl-md-2">
+                                                La portada de hoy
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-25">
+                                    <a class="nav-link" href="#">
+                                        <div class="row">
+                                            <div class="col-4 p-0 pl-2">
+                                                <img src="img/Radio_Marca.png" alt="" height="45">
+                                            </div>
+                                            <div class="col-6 mr-md-1 ml-md-3 p-0">
+                                                Radio MARCA
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <div class="row">
+                                            <div class="col-3 p-0 mr-md-2">
+                                                <img src="img/logo_fantasy.png" alt="" height="45">
+                                            </div>
+                                            <div class="col-8 pl-0">
+                                                Laliga Fantasy MARCA
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>  
+                            </ul>
                         </div>
-                    </li>
-                </ul>
-                <button class="btn btn-danger my-2 my-sm-0 mr-3 ml-4" type="submit">Suscríbete</button>
-                <button class="btn btn-outline-secondary text-danger my-2 my-sm-0" type="submit">Iniciar sesión</button>
+                        <div class="col-12 col-md-2 p-0">
+                            <a class="navbar-brand" href="#"><img src="img/marca-logo-80.png" alt="" height="30"></a>
+                        </div>
+                        <div class="col-12 col-md-5 d-flex align-items-center">
+                            <ul class="navbar-nav ml-lg-auto mh-75">
+                                <li class="nav-item dropdown border rounded">
+                                    <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="img/ESP.jpg" alt="" height="20px"> ES
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item disabled" href="#"><img src="img/ESP.jpg" alt="" height="20px"> ES (España)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/MX.png" alt="" height="20px"> MX (México)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/CO.png" alt="" height="20px"> CO (Colombia)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/AR.png" alt="" height="20px"> AR (Argentina)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/EN.png" alt="" height="20px"> EN (English)</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="btn btn-danger  mh-75 my-2 my-sm-0 mr-3 ml-4" type="submit">Suscríbete</button>
+                            <button class="btn btn-outline-secondary text-danger  mh-75 my-2 my-sm-0" type="submit">Iniciar sesión</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
             </nav>
             <div class="container-fluid bg-danger">
                 <nav class="navbar navbar-expand-lg navbar-light mx-auto py-1 px-0 d-flex justify-content-between" id="segundoMenu">
@@ -142,11 +156,40 @@
         </header>
 
         <section class="main mx-auto">
-            <div class="comercial mx-auto d-flex justify-content-center">
+            <div class="comercial mx-auto d-flex justify-content-center mb-4">
                 <div class="comercial-dibujo bg-danger text-center align-middle text-white"  class="border-0">
                     Inserte comercial aquí
                 </div>
                 <!--<img src="https://online.caliente.mx/loadDisplay?member=marca&amp;campaign=DEFAULT&amp;channel=DEFAULT&amp;zone=56816252&amp;lp=0" width="728" height="90" class="border-0">-->
+            </div>
+            <div class="containter d-flex">
+                <div class="nombreAgenda">
+                    <p class="font-weight-bold">Agenda</p>
+                </div>
+                <div class="enDirecto d-flex w-25 mr-2">
+                    <div class="titulo bg-danger text-white font-weight-bold px-2">En directo</div>
+                    <div class="info px-2" style="background-color: #d4d4d4;">
+                        Todas las noticias <br> <strong>Última hora</strong>
+                    </div>
+                </div>
+                <div class="loMejor d-flex w-25">
+                    <div class="titulo bg-danger text-white font-weight-bold px-2">Lo mejor del día</div>
+                    <div class="info px-2" style="background-color: #d4d4d4;">
+                        Agenda <br> <strong>Jueves 23</strong>
+                    </div>
+                </div>
+                <div class="verMasDirectos">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                </div>
             </div>
         </section>
 
