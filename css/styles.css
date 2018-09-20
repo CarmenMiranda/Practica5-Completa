@@ -43,3 +43,27 @@ nav, .main{
     font-size: 13px;
     width: 70%;
 }
+
+.notaPrincipal a{
+    color: #fff;
+}
+
+
+.tipoNota{
+    font-size: 12px;
+    top:0;
+    left:0;
+}
+
+.descripcionNota{
+    bottom:20px;
+    left: 20px;
+}
+
+.tituloNota{
+    font-size: 50px;
+}
+
+.subtituloNota{
+    font-size: 18px;
+}
