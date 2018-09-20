@@ -4,12 +4,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*HEADER*/
+
 nav, .main{
     width: 85%;
 }
 
 #primerMenu .menu-izquierdo li{
     font-size: 14px;
+    /*width: 30%;*/
 }
 
 .text-danger{
@@ -24,9 +27,16 @@ nav, .main{
     width: 35%;
 }
 
+/*MAIN*/
+
 .comercial-dibujo{
-    width: 728px;
-    height: 90px;
+    width: 900px;
+    height: 110px;
+}
+
+.barra-equipos .equipos{
+    width: 85%;
+    margin: 0 auto;
 }
 
 .nombreAgenda{
@@ -42,6 +52,14 @@ nav, .main{
 .enDirecto .info, .loMejor .info{
     font-size: 13px;
     width: 70%;
+}
+
+.verMasDirectos a:hover{
+    cursor: pointer;
+}
+
+.primer-seccion-notas{
+    margin-top: 80px;
 }
 
 .notaPrincipal a{
@@ -71,6 +89,10 @@ nav, .main{
     font-size: 18px;
 }
 
+.autor-comentarios{
+    padding: 0;
+}
+
 .autor-comentarios .autor, 
 .autor-comentarios .comentarios,
 .fa-comment-alt{
@@ -93,12 +115,12 @@ nav, .main{
 }
 
 .notasDerecho .nota .descripcionNota .tipoNota{
-    font-size: 12px;
+    font-size: 14px;
 
 }
 
 .notasDerecho .nota .descripcionNota .tituloNota{
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
 }
 
