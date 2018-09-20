@@ -48,7 +48,6 @@ nav, .main{
     color: #fff;
 }
 
-
 .tipoNota{
     font-size: 12px;
     top:0;
@@ -60,10 +59,50 @@ nav, .main{
     left: 20px;
 }
 
+.descripcionNota:hover{
+    text-decoration: underline;
+}
+
 .tituloNota{
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .subtituloNota{
     font-size: 18px;
+}
+
+.autor-comentarios .autor, 
+.autor-comentarios .comentarios,
+.fa-comment-alt{
+    font-size: 12px;
+    color: #4a4a4a;
+}
+
+.autor-comentarios .comentarios:hover .fa-comment-alt,
+.autor-comentarios .comentarios:hover{
+    color: #c00 !important;
+    cursor: pointer;
+}
+
+.notasDerecho .nota .descripcionNota{
+    top: 0;
+}
+
+.notasDerecho .nota .descripcionNota:hover{
+    text-decoration: none;
+}
+
+.notasDerecho .nota .descripcionNota .tipoNota{
+    font-size: 12px;
+
+}
+
+.notasDerecho .nota .descripcionNota .tituloNota{
+    font-size: 14px;
+    color: #000;
+}
+
+.notasDerecho .nota .descripcionNota:hover .tituloNota{
+    color: #888888 !important;
+    text-decoration: none;
 }
