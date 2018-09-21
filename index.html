@@ -17,56 +17,49 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-md navbar-light mx-auto" id="primerMenu">
+                <a class="navbar-brand d-inline d-md-none" href="#"><img src="img/marca-logo-80.png" alt="" height="30"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primeraBarra" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="primeraBarra">
                     <div class="row w-100">
-                        <div class="col-md-5 col-12 p-0">
-                            <ul class="navbar-nav float-left menu-izquierdo w-100">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <div class="row">
-                                            <div class="col-3 p-0">
-                                                <img src="img/portada de hoy.jpg" alt="" height="45">
-                                            </div>
-                                            <div class="col-8 p-0 pl-md-2">
-                                                La portada de hoy
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <div class="row">
-                                            <div class="col-4 p-0 pl-2">
-                                                <img src="img/Radio_Marca.png" alt="" height="45">
-                                            </div>
-                                            <div class="col-6 mr-md-1 ml-md-3 p-0">
-                                                Radio MARCA
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <div class="row">
-                                            <div class="col-3 p-0 mr-md-2">
-                                                <img src="img/logo_fantasy.png" alt="" height="45">
-                                            </div>
-                                            <div class="col-8 pl-0">
-                                                Laliga Fantasy MARCA
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>  
-                            </ul>
+                        <div class="col-md-5 col-12 p-0 d-flex flex-wrap justify-content-between menu-izquierdo">
+                            <a href="#">
+                                <div class="row">
+                                    <div class="col-3 p-0">
+                                        <img src="img/portada de hoy.jpg" title="La portada de hoy"alt="" height="45">
+                                    </div>
+                                    <div class="col-8 p-0 pl-md-2">
+                                        La portada de hoy
+                                    </div>
+                                </div> 
+                            </a>
+                            <a href="#">
+                                <div class="row">
+                                    <div class="col-4 p-0 pl-2">
+                                        <img src="img/Radio_Marca.png" alt="" height="45">
+                                    </div>
+                                    <div class="col-6 mr-md-1 ml-md-3 p-0">
+                                        Radio MARCA
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="row">
+                                    <div class="col-3 p-0 mr-md-2">
+                                        <img src="img/logo_fantasy.png" alt="" height="45">
+                                    </div>
+                                    <div class="col-8 pl-0">
+                                        Laliga Fantasy MARCA
+                                    </div>
+                                </div>
+                            </a>                           
                         </div>
-                        <div class="col-12 col-md-2 p-0">
+                        <div class="col-12 col-md-2 p-0 d-none d-md-inline">
                             <a class="navbar-brand" href="#"><img src="img/marca-logo-80.png" alt="" height="30"></a>
                         </div>
                         <div class="col-12 col-md-5 d-flex align-items-center">
-                            <ul class="navbar-nav ml-lg-auto mh-75">
+                            <ul class="navbar-nav ml-md-auto mh-75">
                                 <li class="nav-item dropdown border rounded">
                                     <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img src="img/ESP.jpg" alt="" height="20px"> ES
@@ -83,89 +76,89 @@
                             <button class="btn btn-danger  mh-75 my-2 my-sm-0 mr-3 ml-4" type="submit">Suscríbete</button>
                             <button class="btn btn-outline-secondary text-danger  mh-75 my-2 my-sm-0" type="submit">Iniciar sesión</button>
                         </div>
-                    </div>
-                    
-                    
+                    </div>   
                 </div>
             </nav>
-            <div class="container-fluid bg-danger">
-                <nav class="navbar navbar-expand-lg navbar-light mx-auto py-1 px-0 d-flex justify-content-between" id="segundoMenu">
-                    <ul class="navbar-nav float-left menu-izquierdo">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Fútbol
+            <div class="container-fluid bg-danger p-0">
+                <div class="barra-categorias mx-auto d-flex flex-wrap">
+                    <div class="menu-izquierdo d-flex flex-wrap">
+                        <div class="categoria my-0 mx-2 p-3 position-relative">
+                            <a class="text-white font-weight-bold" href="#">
+                                Fútbol <i class="fas fa-angle-down"></i>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="menu bg-dark d-none position-absolute">
+                                <a class="text-white" href="#">Action</a> <br>
+                                <a class="text-white" href="#">Another action</a> <br>
+                                <a class="text-white" href="#">Something else here</a>
                             </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Baloncesto
+                        </div>
+                        <div class="categoria my-0 mx-2 p-3 position-relative">
+                            <a class="text-white font-weight-bold" href="#">
+                                Baloncesto <i class="fas fa-angle-down"></i>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="menu bg-dark d-none position-absolute">
+                                <a class="text-white" href="#">Action</a> <br>
+                                <a class="text-white" href="#">Another action</a> <br>
+                                <a class="text-white" href="#">Something else here</a>
                             </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Motor
+                        </div>
+                        <div class="categoria my-0 mx-2 p-3 position-relative">
+                            <a class="text-white font-weight-bold" href="#">
+                                Motor <i class="fas fa-angle-down"></i>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="menu bg-dark d-none position-absolute">
+                                <a class="text-white" href="#">Action</a> <br>
+                                <a class="text-white" href="#">Another action</a> <br>
+                                <a class="text-white" href="#">Something else here</a>
                             </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Polideportivo
+                        </div>
+                        <div class="categoria my-0 mx-2 p-3 position-relative">
+                            <a class="text-white font-weight-bold" href="#">
+                                Polideportivo <i class="fas fa-angle-down"></i>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="menu bg-dark d-none position-absolute">
+                                <a class="text-white" href="#">Action</a> <br>
+                                <a class="text-white" href="#">Another action</a> <br>
+                                <a class="text-white" href="#">Something else here</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </div>
+                        <div class="dropdown mx-2 p-3">
+                            <a class="text-white font-weight-bold" href="#" id="masDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Más +
                             </a>
-                        </li>
-                    </ul>
-                    <input class="form-control float-right mr-sm-2 search" type="search" placeholder="Busca en marca.com" aria-label="Search">
-                </nav>
+                            <div class="dropdown-menu" aria-labelledby="masDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="form-control float-right mr-0 search ml-0 ml-md-auto my-2" type="search" placeholder="Busca en marca.com" aria-label="Search">
+                </div>
             </div>
-            <div class="container-fluid d-flex barra-equipos p-0" style="background-color: #eeeeee;">
-                <div class="equipos d-flex">
-                    <a class="m-2" href="#"><img src="img/equipo1-alavés.png" title="Alavés" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo2-athletic-de-bilbao.png" title="Athletic de Bilbao" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo3-atlético-de-madrid.png" title="Atlético de Madrid" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo4-barcelona.png" title="Barcelona" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo5-betis.png" title="Betis" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo6-celta.png" title="Celta" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo7-eibar.png" title="Eibar" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo8-espanyol.png" title="Espanyol" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo9-getafe.png" title="Getafe" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo10-girona.png" title="Girona" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo11-huesca.png" title="Huesca" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo12-leganés.png" title="Leganés" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo13-levante.png" title="Levante" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo14-rayo-vallecano.png" title="Rayo Vallecano" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo15-real-madrid.png" title="Real Madrid" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo16-real-sociedad.png" title="Real Sociedad" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo17-sevilla.png" title="Sevilla" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo18-valencia.png" title="Valencia" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo19-valladolid.png" title="Valladolid" alt="" height="30px"></a>
-                    <a class="m-2" href="#"><img src="img/equipo20-villarreal.png" title="Villarreal" alt="" height="30px"></a>
+            <div class="container-fluid barra-equipos p-0" style="background-color: #eeeeee;">
+                <div class="equipos d-flex flex-wrap">
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo1-alavés.png" title="Alavés" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo2-athletic-de-bilbao.png" title="Athletic de Bilbao" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo3-atlético-de-madrid.png" title="Atlético de Madrid" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo4-barcelona.png" title="Barcelona" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo5-betis.png" title="Betis" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo6-celta.png" title="Celta" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo7-eibar.png" title="Eibar" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo8-espanyol.png" title="Espanyol" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo9-getafe.png" title="Getafe" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo10-girona.png" title="Girona" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo11-huesca.png" title="Huesca" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo12-leganés.png" title="Leganés" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo13-levante.png" title="Levante" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo14-rayo-vallecano.png" title="Rayo Vallecano" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo15-real-madrid.png" title="Real Madrid" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo16-real-sociedad.png" title="Real Sociedad" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo17-sevilla.png" title="Sevilla" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo18-valencia.png" title="Valencia" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo19-valladolid.png" title="Valladolid" alt="" height="30px"></a>
+                    <a class="m-lg-2 m-1" href="#"><img src="img/equipo20-villarreal.png" title="Villarreal" alt="" height="30px"></a>
                     <a class="my-2 ml-auto mr-0" href="#"><img src="img/logo-marca-apuestas.png" title="Marca apuestas" alt="" height="30px"></a>
                 </div>
             </div> 
@@ -178,29 +171,37 @@
                 </div>
             </div>
             <div class="containter d-flex">
-                <div class="nombreAgenda">
-                    <p class="font-weight-bold">Agenda</p>
-                </div>
-                <div class="enDirecto d-flex w-25 mr-2">
-                    <div class="titulo bg-danger text-white font-weight-bold px-2">En directo</div>
-                    <div class="info px-2" style="background-color: #d4d4d4;">
-                        Todas las noticias <br> <strong>Última hora</strong>
-                    </div>
-                </div>
-                <div class="loMejor d-flex w-25">
-                    <div class="titulo bg-danger text-white font-weight-bold px-2">Lo mejor del día</div>
-                    <div class="info px-2" style="background-color: #d4d4d4;">
-                        Agenda <br> <strong>Jueves 23</strong>
-                    </div>
-                </div>
-                <div class="verMasDirectos ml-auto my-auto">
-                    <div class="dropdown">
-                        <a class="dropdown-toggle text-secondary" id="dropdownDirectos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Ver más directos
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownDirectos">
-                            <a class="dropdown-item" href="#">Action</a>
+                <div class="row w-100">
+                    <div class="col-md-8 col-12 d-flex flex-wrap">
+                        <div class="nombreAgenda mr-lg-3 mr-1">
+                            <p class="font-weight-bold m-0">Agenda</p>
                         </div>
+                        <div class="enDirecto d-flex mr-lg-3 mr-1">
+                            <div class="titulo bg-danger text-white font-weight-bold px-2">En directo</div>
+                            <div class="info px-2" style="background-color: #d4d4d4;">
+                                Todas las noticias <br> <strong>Última hora</strong>
+                            </div>
+                        </div>
+                        <div class="loMejor d-flex">
+                            <div class="titulo bg-danger text-white font-weight-bold px-2">Lo mejor del día</div>
+                            <div class="info px-2" style="background-color: #d4d4d4;">
+                                Agenda <br> <strong>Jueves 23</strong>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="verMasDirectos float-md-right my-md-auto my-2">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle text-secondary" id="dropdownDirectos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Ver más directos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownDirectos">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -272,7 +273,211 @@
                     </div>
                 </div>
             </div>
+            <div class="container-fluid p-0 segunda-seccion-notas mt-5 d-flex flex-wrap">
+                <div class="container nota text-white px-0 position-relative">
+                    <div class="tipoNota position-absolute bg-primary p-2"> FÚTBOL </div>
+                    <a href="#">
+                        <img src="img/deleAlli.jpg" alt="" style="width:100%;">
+                        <div class="descripcionNota">
+                            <div class="tituloNota font-weight-bold"> Felix Orode, el jugador nigeriano que explica el festejo de Dele Alli </div>
+                        </div>
+                    </a>
+                    <hr>
+                </div>
+                <div class="container nota text-white px-0 position-relative">
+                    <div class="tipoNota position-absolute bg-primary p-2"> SERIE A </div>
+                    <a href="#">
+                        <img src="img/cristiano-cuadrado.jpg" alt="" style="width:100%;">
+                        <div class="descripcionNota">
+                            <div class="tituloNota font-weight-bold"> Cristiano habla sobre Cuadrado y la cesión del número 7 </div>
+                        </div>
+                    </a>
+                    <div class="autor-comentarios d-flex mt-2">
+                        <div class="autor">REDACCIÓN MARCA CLARO</div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="container nota text-white px-0 position-relative">
+                    <div class="tipoNota position-absolute bg-primary p-2"> MÉXICO</div>
+                    <a href="#">
+                        <img src="img/cruz-azul.jpg" alt="" style="width:100%;">
+                        <div class="descripcionNota">
+                            <div class="tituloNota font-weight-bold"> La joya celeste que hace soñar a Cruz Azul</div>
+                        </div>
+                    </a>
+                    <div class="autor-comentarios d-flex mt-2">
+                        <div class="autor">JAVIER CARDOSO</div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="container-fluid esNoticia my-3 my-md-5 border-top border-bottom p-md-3 p-2">
+                <strong class="mr-3">Es noticia: </strong>
+                <a href="#" class="mr-3 text-dark">Mercado de fichajes</a>
+                <a href="#" class="mr-3 text-dark">Rodrigo</a>
+                <a href="#" class="mr-3 text-dark">Fernando Alonso</a>
+                <a href="#" class="mr-3 text-dark">Lewandowski</a>
+                <a href="#" class="mr-3 text-dark">Usain Bolt</a>
+                <a href="#" class="mr-3 text-dark">Donald Trump</a>
+                <a href="#" class="mr-3 text-dark">Calendario Liga</a>
+            </div>
+            <div class="container-fluid tercer-seccion-notas p-0 d-flex flex-wrap justify-content-between mb-3">
+                <div class="nota p-0">
+                    <div class="row ml-md-2">
+                        <div class="col-md-5 col-12 p-0">
+                            <img src="img/equipos-jugadores-afe.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col-md-7 col-12 descripcionNota p-0">
+                            <div class="tipoNota text-primary">LALIGA SANTANDER</div>
+                            <a class="tituloNota font-weight-bold" href="#">¿Qué equipos y qué jugadores estuvieron en la reunion de la AFE?</a>
+                        </div>
+                        <div class="col-12 autor-comentarios d-flex">
+                            <div class="comentarios text-danger ml-auto"><i class="fas fa-comment-alt"></i> 14</div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="nota p-0">
+                    <div class="row ml-md-2">
+                        <div class="col-md-5 col-12 p-0">
+                            <img src="img/draxler-martial.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col-md-7 col-12 descripcionNota p-0">
+                            <div class="tipoNota text-primary">SEVILLA FC</div>
+                            <a class="tituloNota font-weight-bold" href="#">Draxler y Martial, nombres 'top' en la recta final del mercado</a>
+                        </div>
+                        <div class="col-12 autor-comentarios d-flex mt-2">
+                            <div class="autor">ROCIO GUEVARA SEVILLA</div>
+                            <div class="comentarios text-danger ml-auto"><i class="fas fa-comment-alt"></i> 64</div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="container-fluid p-0 segunda-seccion-notas d-flex flex-wrap justify-content-start mb-5">
+                <div class="container nota text-white px-0 position-relative mx-3">
+                    <div class="tipoNota position-absolute bg-primary p-2"> REAL MADRID </div>
+                    <a href="#">
+                        <img src="img/lunin-leganés.jpg" alt="" style="width:100%;">
+                        <div class="descripcionNota">
+                            <div class="tituloNota font-weight-bold"> Lunin muy cerca de irse cedido al leganés </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="container nota text-white px-0 position-relative mx-3">
+                    <div class="tipoNota position-absolute bg-primary p-2"> REAL MADRID </div>
+                    <a href="#">
+                        <img src="img/algo-pasa-rodrigo.jpg" alt="" style="width:100%;">
+                        <div class="descripcionNota">
+                            <div class="tituloNota font-weight-bold"> Algo pasa con Rodrigo </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
+
+        <footer>
+            <div class="superior bg-dark">
+                <div class="container pt-3">
+                    <div class="titulo">
+                        Otras webs de Unidad Editorial
+                    </div>
+                    <hr class="bg-white">
+                    <div class="contenido row">
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Marca</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="http://www.marca.com/mundo-marca/2017/01/18/587f574fe2704e47368b45ff.html" title="App Marca">App Marca</a></li>
+                                    <li><a href="https://deportes.marcaapuestas.es/es" title="Apuestas Deportivas">Apuestas Deportivas</a></li>
+                                    <li><a href="http://www.marca.com/futbol/primera/clasificacion.html" title="Clasificación LaLiga">Clasificación LaLiga</a></li>
+                                    <li><a href="http://www.marca.com/futbol/primera/calendario.html" title="Calendario LaLiga">Calendario LaLiga</a></li>
+                                    <li><a href="http://www.marca.com/hemeroteca/" title="Hemeroteca Marca">Hemeroteca Marca</a></li>
+                                    <li><a href="https://esports.marca.com/" title="Marca eSports">Marca eSports</a></li>
+                                    <li><a href="http://app.marca.com/Estadisticas/JuegosMunicipales/Controlador" title="Marca Madrid">Marca Madrid</a></li>
+                                    <li><a href="https://clk.tradedoubler.com/click?p=271538&amp;a=2407712&amp;g=23657338" title="Marca en Orbyt">Marca en Orbyt</a></li>
+                                    <li><a href="https://clk.tradedoubler.com/click?p=286063&amp;a=2407712&amp;g=24123938" title="Zona Marca">Zona Marca</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Ocio y Moda</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="http://www.marca.com/tiramillas.html" title="Tiramillas">Tiramillas</a></li>
+                                    <li><a href="http://www.telva.com/" title="Moda - Telva">Moda - Telva</a></li>
+                                    <li><a href="http://www.buhomag.com/" title="BUHO Magazine">BUHO Magazine</a></li>
+                                    <li><a href="http://www.elmundo.es/traductor/" title="Traductor">Traductor</a></li>
+                                    <li><a href="http://www.elmundo.es/television/programacion-tv/" title="Programación TV">Programación TV</a></li>
+                                    <li><a href="https://www.marcaentradas.com/" title="Marca Entradas">Marca Entradas</a></li>
+                                    <li><a href="http://www.mibebeyyo.com/" title="Mi bebé y yo">Mi bebé y yo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Unidad Editorial</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="http://www.elmundo.es/" title="El Mundo">El Mundo</a></li>
+                                    <li><a href="http://www.expansion.com/" title="Expansión">Expansión</a></li>
+                                    <li><a href="https://cuidateplus.marca.com/" title="CuídatePlus">CuídatePlus</a></li>
+                                    <li><a href="http://www.diariomedico.com/" title="Diario Médico">Diario Médico</a></li>
+                                    <li><a href="http://www.correofarmaceutico.com/" title="Correo Farmacéutico">Correo Farmacéutico</a></li>
+                                    <li><a href="http://suscripcion.marca.com/" title="Suscripción Marca">Suscripción Marca</a></li>
+                                    <li><a href="http://suscripcion.elmundo.es/" title="Suscripción El Mundo">Suscripción El Mundo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Formación y Empleo</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="https://www.escuelaunidadeditorial.es/" title="Escuela Unidad Editorial">Escuela Unidad Editorial</a></li>
+                                    <li><a href="http://www.unidadeditorial.es/" title="Unidad Editorial">Unidad Editorial</a></li>
+                                    <li><a href="http://www.expansion.com/expansion-empleo.html" title="Expansión y Empleo">Expansión y Empleo</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inferior" style="background-color: #eeeeee;">
+                <div class="container text-center py-5">
+                    <div class="derechos font-weight-bold">
+                        <p>© Agosto 2018 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="links">
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/aviso-legal.html" title="Términos y condiciones de uso">Términos y condiciones de uso</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/proteccion-datos.html" title="Política de privacidad">Política de privacidad</a>
+                        <a class="mr-3 text-dark" href="http://cookies.unidadeditorial.es/" title="Política de cookies">Política de cookies</a>
+                        <a class="mr-3 text-dark" href="http://www.ojd.es/" title="Certificado por OJD">Certificado por OJD</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/contacto.html" title="Contacto">Contacto</a>
+                        <a class="mr-3 text-dark" href="http://www.unidadeditorial.com/publicidad" title="Publicidad">Publicidad</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/ayuda.html" title="Ayuda">Ayuda</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/el_equipo.html" title="Nuestro equipo">Nuestro equipo</a>
+                        <a class="mr-3 text-dark" href="https://www.uesyndication.com/" title="Venta de contenidos">Venta de contenidos</a>
+                    </div>
+                    <br><br>
+                    <div class="font-weight-bold mt-2">
+                        <p>Síguenos en:</p>
+                    </div>
+                    <div class="redes-sociales d-flex flex-wrap justify-content-center">
+                        <div class="red facebook p-2 mr-3">
+                            <a class="text-white" href="https://www.facebook.com/MARCA" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="red twitter p-2 mr-3">
+                            <a class="text-white" href="https://twitter.com/marca" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="red google-plus p-2 mr-3">
+                            <a class="text-white" href="https://plus.google.com/+DiarioMARCA/posts" target="_blank" title="Google Plus"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <div class="red rss p-2 mr-3">
+                            <a class="text-white" href="http://www.marca.com/deporte/rss/" target="_blank" title="RSS"><i class="fas fa-rss"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -6,13 +6,38 @@
 
 /*HEADER*/
 
-nav, .main{
+nav, .main, .barra-categorias{
     width: 85%;
 }
 
-#primerMenu .menu-izquierdo li{
+#primeraBarra .menu-izquierdo a{
     font-size: 14px;
-    /*width: 30%;*/
+    font-weight: bold;
+    width: 25%;
+    color: #000000;
+    text-decoration: none;
+}
+
+.barra-categorias .menu-izquierdo .categoria:hover{
+    background-color: #141d25;
+}
+
+.barra-categorias .menu-izquierdo .categoria a:hover{
+    text-decoration: none;
+}
+
+.barra-categorias .menu-izquierdo .categoria .menu{
+    bottom: -1;
+    width: 300px;
+    padding: 20px;
+}
+
+.barra-categorias .menu-izquierdo .categoria:hover .menu{
+    display: block !important;
+}
+
+.barra-categorias .menu-izquierdo .categoria .menu a:hover{
+    color: #c00 !important;
 }
 
 .text-danger{
@@ -40,8 +65,11 @@ nav, .main{
 }
 
 .nombreAgenda{
-    width:10%;
-    font-size: 14px;
+    font-size: 20px;
+}
+
+.enDirecto, .loMejor{
+    width: 40%;
 }
 
 .enDirecto .titulo, .loMejor .titulo{
@@ -73,7 +101,7 @@ nav, .main{
 }
 
 .descripcionNota{
-    bottom:20px;
+    bottom:30px;
     left: 20px;
 }
 
@@ -106,25 +134,155 @@ nav, .main{
     cursor: pointer;
 }
 
-.notasDerecho .nota .descripcionNota{
+.notasDerecho .nota .descripcionNota,
+.tercer-seccion-notas .nota .descripcionNota{
     top: 0;
 }
 
-.notasDerecho .nota .descripcionNota:hover{
+.notasDerecho .nota .descripcionNota:hover,
+.tercer-seccion-notas .nota .descripcionNota:hover{
     text-decoration: none;
 }
 
-.notasDerecho .nota .descripcionNota .tipoNota{
+.notasDerecho .nota .descripcionNota .tipoNota,
+.tercer-seccion-notas .nota .descripcionNota .tipoNota{
     font-size: 14px;
 
 }
 
-.notasDerecho .nota .descripcionNota .tituloNota{
+.notasDerecho .nota .descripcionNota .tituloNota,
+.tercer-seccion-notas .nota .descripcionNota .tituloNota{
     font-size: 16px;
     color: #000;
 }
 
-.notasDerecho .nota .descripcionNota:hover .tituloNota{
+.notasDerecho .nota .descripcionNota:hover .tituloNota,
+.tercer-seccion-notas .nota .descripcionNota:hover .tituloNota{
     color: #888888 !important;
     text-decoration: none;
 }
+
+.segunda-seccion-notas .nota{
+    width: 30%;
+}
+
+.segunda-seccion-notas .nota a{
+    color: #000;
+}
+
+.segunda-seccion-notas .nota .tipoNota{
+    font-size: 12px;
+    color: #fff;
+    top:0;
+    left:0;
+}
+
+.segunda-seccion-notas .nota:hover .descripcionNota:hover .tituloNota{
+    color: #888888 !important;
+    text-decoration: none !important;
+}
+
+.segunda-seccion-notas .nota .tituloNota{
+    font-size: 20px;
+}
+
+.segunda-seccion-notas .nota .autor-comentarios .autor{
+    font-size: 12px;
+    color: #4a4a4a;
+}
+
+.tercer-seccion-notas .nota{
+    width: 25%;
+}
+
+/*FOOTER*/
+
+footer .superior .titulo{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .superior .contenido .subtitulo{
+    color: #fff;
+}
+
+footer .superior .contenido ul{
+    list-style-type: none;
+
+}
+
+footer .superior .contenido ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .superior .contenido ul li a:hover{
+    color: #888888;
+}
+
+footer .inferior .redes-sociales .red{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+footer .inferior .redes-sociales .facebook{
+    background-color: #3b5998;
+}
+
+footer .inferior .redes-sociales .twitter{
+    background-color: #1da1f2;
+}
+
+footer .inferior .redes-sociales .google-plus{
+    background-color: #dd4b39;
+}
+
+footer .inferior .redes-sociales .rss{
+    background-color: #f26522;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 888px) {
+    /*HEADER*/
+    .search{
+        width: 100%;
+    }
+
+    /*MAIN*/
+    .enDirecto, .loMejor{
+        width: 100%;
+        margin-top: 10px;
+    } 
+}
+
+@media screen and (max-width: 770px){
+    /*MAIN*/
+    .primer-seccion-notas{
+        margin-top: 20px;
+    }
+    
+    .tituloNota{
+        font-size: 20px;
+    }
+    .subtituloNota{
+        font-size: 12px;
+    }
+
+    .descripcionNota{
+        bottom:50px;
+        left: 20px;
+    }
+
+    .segunda-seccion-notas .nota,
+    .tercer-seccion-notas .nota{
+        width: 80%;
+        justify-content: center;
+    }
+}
+
+
+
