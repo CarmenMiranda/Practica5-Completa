@@ -264,13 +264,13 @@ footer .inferior .redes-sociales .rss{
         padding-left: 10px !important;
     }
 
-
-    .search{
-        width: 30%;
-    }
     .btnSuscribete{
         margin-left: 5px !important;
         margin-right: 5px !important;
+    }
+
+    .search{
+        width: 30%;
     }
 
     /*MAIN*/
