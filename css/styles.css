@@ -54,6 +54,10 @@ nav, .main, .barra-categorias{
 
 /*MAIN*/
 
+.comercial{
+    height: 13.5vh;
+}
+
 .comercial-dibujo{
     width: 900px;
     height: 110px;
@@ -87,7 +91,7 @@ nav, .main, .barra-categorias{
 }
 
 .primer-seccion-notas{
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .notaPrincipal a{
@@ -246,6 +250,36 @@ footer .inferior .redes-sociales .rss{
 
 /*MEDIA QUERIES*/
 
+@media screen and (max-width: 1024px) {
+    /*HEADER*/
+    #primerMenu{
+        padding: 10px 0;
+    }
+    
+    #primeraBarra .menu-izquierdo a .descripcionRadio{
+        margin-right: 3px !important;
+    }
+
+    #primeraBarra .menu-izquierdo a .descripcionLigaF{
+        padding-left: 10px !important;
+    }
+
+
+    .search{
+        width: 30%;
+    }
+    .btnSuscribete{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+    /*MAIN*/
+    .enDirecto, .loMejor{
+        width: 38%;
+        margin-top: 10px;
+    } 
+}
+
 @media screen and (max-width: 888px) {
     /*HEADER*/
     .search{
@@ -260,7 +294,21 @@ footer .inferior .redes-sociales .rss{
 }
 
 @media screen and (max-width: 770px){
+    /*HEADER*/
+    #primeraBarra .menu-izquierdo a{
+        width: 50%;
+    }
+
+    .barra-categorias .menu-izquierdo .categoria .menu{
+        width: 160px;
+        z-index: 100;
+    }
+
     /*MAIN*/
+    .comercial{
+        height: 7.5vh;
+    }
+
     .primer-seccion-notas{
         margin-top: 20px;
     }
@@ -279,7 +327,7 @@ footer .inferior .redes-sociales .rss{
 
     .segunda-seccion-notas .nota,
     .tercer-seccion-notas .nota{
-        width: 80%;
+        width: 100%;
         justify-content: center;
     }
 }
