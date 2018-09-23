@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style-nota.css">
+
+        <title>Práctica B5- Nota- MARCA - Diario deportivo online</title>
+        <link href="img/icono.ico" type="image/ico" rel="icon">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light mx-auto pb-0" id="primerMenu">
+                <a class="navbar-brand" href="#"><img src="img/marca-logo-80.png" alt="" height="30"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primeraBarra" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="primeraBarra">
+                    <div class="row w-100">
+                        <div class="col-12 d-flex flex-wrap align-items-center p-0">
+                            <ul class="navbar-nav mh-75 ml-2">
+                                <li class="nav-item dropdown border rounded">
+                                    <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="img/ESP.jpg" alt="" height="20px"> ES
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item disabled" href="#"><img src="img/ESP.jpg" alt="" height="20px"> ES (España)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/MX.png" alt="" height="20px"> MX (México)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/CO.png" alt="" height="20px"> CO (Colombia)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/AR.png" alt="" height="20px"> AR (Argentina)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/EN.png" alt="" height="20px"> EN (English)</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="barra-categorias d-flex flex-wrap">
+                                <div class="menu-izquierdo d-flex flex-wrap">
+                                    <div class="categoria my-0 mx-2 p-3 position-relative bg-danger">
+                                        <a class="text-white font-weight-bold" href="#">
+                                            Fútbol <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="menu bg-dark d-none position-absolute">
+                                            <a class="text-white" href="#">Action</a> <br>
+                                            <a class="text-white" href="#">Another action</a> <br>
+                                            <a class="text-white" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="categoria my-0 mx-2 p-3 position-relative">
+                                        <a class="text-dark font-weight-bold" href="#">
+                                            Baloncesto <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="menu bg-dark d-none position-absolute">
+                                            <a class="text-white" href="#">Action</a> <br>
+                                            <a class="text-white" href="#">Another action</a> <br>
+                                            <a class="text-white" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="categoria my-0 mx-2 p-3 position-relative">
+                                        <a class="text-dark font-weight-bold" href="#">
+                                            Motor <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="menu bg-dark d-none position-absolute">
+                                            <a class="text-white" href="#">Action</a> <br>
+                                            <a class="text-white" href="#">Another action</a> <br>
+                                            <a class="text-white" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="categoria my-0 mx-2 p-3 position-relative">
+                                        <a class="text-dark font-weight-bold" href="#">
+                                            Polideportivo <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="menu bg-dark d-none position-absolute">
+                                            <a class="text-white" href="#">Action</a> <br>
+                                            <a class="text-white" href="#">Another action</a> <br>
+                                            <a class="text-white" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown mx-2 p-3">
+                                        <a class="text-dark font-weight-bold" href="#" id="masDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Más +
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="masDropdown">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="btnSuscribete" class="btn btn-danger  mh-75 my-2 my-sm-0 mr-3 ml-4" type="submit">Suscríbete</button>
+                            <button id="btnIniciaSesion" class="btn text-danger  mh-75 my-2 my-sm-0" type="submit">Iniciar sesión</button>
+                        </div>
+                    </div>   
+                </div>
+            </nav>
+            <div class="container-fluid bg-danger p-0">
+                yujbjbkjnkj
+                <!--<div class="barra-categorias mx-auto d-flex flex-wrap">
+                    <div class="menu-izquierdo d-flex flex-wrap">
+                        <div class="categoria my-0 mx-2 p-3 position-relative">
+                            <a class="text-white font-weight-bold" href="#">
+                                Fútbol <i class="fas fa-angle-down"></i>
+                            </a>
+                            <div class="menu bg-dark d-none position-absolute">
+                                <a class="text-white" href="#">Action</a> <br>
+                                <a class="text-white" href="#">Another action</a> <br>
+                                <a class="text-white" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <div class="categoria my-0 mx-2 p-3 position-relative">
+                            <a class="text-white font-weight-bold" href="#">
+                                Baloncesto <i class="fas fa-angle-down"></i>
+                            </a>
+                            <div class="menu bg-dark d-none position-absolute">
+                                <a class="text-white" href="#">Action</a> <br>
+                                <a class="text-white" href="#">Another action</a> <br>
+                                <a class="text-white" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <div class="categoria my-0 mx-2 p-3 position-relative">
+                            <a class="text-white font-weight-bold" href="#">
+                                Motor <i class="fas fa-angle-down"></i>
+                            </a>
+                            <div class="menu bg-dark d-none position-absolute">
+                                <a class="text-white" href="#">Action</a> <br>
+                                <a class="text-white" href="#">Another action</a> <br>
+                                <a class="text-white" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <div class="categoria my-0 mx-2 p-3 position-relative">
+                            <a class="text-white font-weight-bold" href="#">
+                                Polideportivo <i class="fas fa-angle-down"></i>
+                            </a>
+                            <div class="menu bg-dark d-none position-absolute">
+                                <a class="text-white" href="#">Action</a> <br>
+                                <a class="text-white" href="#">Another action</a> <br>
+                                <a class="text-white" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <div class="dropdown mx-2 p-3">
+                            <a class="text-white font-weight-bold" href="#" id="masDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Más +
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="masDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="form-control float-right mr-0 search ml-0 ml-md-auto my-2" type="search" placeholder="Busca en marca.com" aria-label="Search">
+                </div>-->
+            </div>
+        </header>
+
+        <section class="main mx-auto">
+            <div class="comercial mx-auto d-flex justify-content-center mb-3 mt-3 mt-md-4">
+                <img src="img/paginaPrincipal/comercial.PNG" alt="" width="72%">
+            </div>
+        </section>
+
+        <footer>
+            <div class="superior bg-dark">
+                <div class="container pt-3">
+                    <div class="titulo">
+                        Otras webs de Unidad Editorial
+                    </div>
+                    <hr class="bg-white">
+                    <div class="contenido row">
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Marca</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="http://www.marca.com/mundo-marca/2017/01/18/587f574fe2704e47368b45ff.html" title="App Marca">App Marca</a></li>
+                                    <li><a href="https://deportes.marcaapuestas.es/es" title="Apuestas Deportivas">Apuestas Deportivas</a></li>
+                                    <li><a href="http://www.marca.com/futbol/primera/clasificacion.html" title="Clasificación LaLiga">Clasificación LaLiga</a></li>
+                                    <li><a href="http://www.marca.com/futbol/primera/calendario.html" title="Calendario LaLiga">Calendario LaLiga</a></li>
+                                    <li><a href="http://www.marca.com/hemeroteca/" title="Hemeroteca Marca">Hemeroteca Marca</a></li>
+                                    <li><a href="https://esports.marca.com/" title="Marca eSports">Marca eSports</a></li>
+                                    <li><a href="http://app.marca.com/Estadisticas/JuegosMunicipales/Controlador" title="Marca Madrid">Marca Madrid</a></li>
+                                    <li><a href="https://clk.tradedoubler.com/click?p=271538&amp;a=2407712&amp;g=23657338" title="Marca en Orbyt">Marca en Orbyt</a></li>
+                                    <li><a href="https://clk.tradedoubler.com/click?p=286063&amp;a=2407712&amp;g=24123938" title="Zona Marca">Zona Marca</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Ocio y Moda</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="http://www.marca.com/tiramillas.html" title="Tiramillas">Tiramillas</a></li>
+                                    <li><a href="http://www.telva.com/" title="Moda - Telva">Moda - Telva</a></li>
+                                    <li><a href="http://www.buhomag.com/" title="BUHO Magazine">BUHO Magazine</a></li>
+                                    <li><a href="http://www.elmundo.es/traductor/" title="Traductor">Traductor</a></li>
+                                    <li><a href="http://www.elmundo.es/television/programacion-tv/" title="Programación TV">Programación TV</a></li>
+                                    <li><a href="https://www.marcaentradas.com/" title="Marca Entradas">Marca Entradas</a></li>
+                                    <li><a href="http://www.mibebeyyo.com/" title="Mi bebé y yo">Mi bebé y yo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Unidad Editorial</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="http://www.elmundo.es/" title="El Mundo">El Mundo</a></li>
+                                    <li><a href="http://www.expansion.com/" title="Expansión">Expansión</a></li>
+                                    <li><a href="https://cuidateplus.marca.com/" title="CuídatePlus">CuídatePlus</a></li>
+                                    <li><a href="http://www.diariomedico.com/" title="Diario Médico">Diario Médico</a></li>
+                                    <li><a href="http://www.correofarmaceutico.com/" title="Correo Farmacéutico">Correo Farmacéutico</a></li>
+                                    <li><a href="http://suscripcion.marca.com/" title="Suscripción Marca">Suscripción Marca</a></li>
+                                    <li><a href="http://suscripcion.elmundo.es/" title="Suscripción El Mundo">Suscripción El Mundo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Formación y Empleo</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="https://www.escuelaunidadeditorial.es/" title="Escuela Unidad Editorial">Escuela Unidad Editorial</a></li>
+                                    <li><a href="http://www.unidadeditorial.es/" title="Unidad Editorial">Unidad Editorial</a></li>
+                                    <li><a href="http://www.expansion.com/expansion-empleo.html" title="Expansión y Empleo">Expansión y Empleo</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inferior" style="background-color: #eeeeee;">
+                <div class="container text-center py-5">
+                    <div class="derechos font-weight-bold">
+                        <p>© Agosto 2018 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="links">
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/aviso-legal.html" title="Términos y condiciones de uso">Términos y condiciones de uso</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/proteccion-datos.html" title="Política de privacidad">Política de privacidad</a>
+                        <a class="mr-3 text-dark" href="http://cookies.unidadeditorial.es/" title="Política de cookies">Política de cookies</a>
+                        <a class="mr-3 text-dark" href="http://www.ojd.es/" title="Certificado por OJD">Certificado por OJD</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/contacto.html" title="Contacto">Contacto</a>
+                        <a class="mr-3 text-dark" href="http://www.unidadeditorial.com/publicidad" title="Publicidad">Publicidad</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/ayuda.html" title="Ayuda">Ayuda</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/el_equipo.html" title="Nuestro equipo">Nuestro equipo</a>
+                        <a class="mr-3 text-dark" href="https://www.uesyndication.com/" title="Venta de contenidos">Venta de contenidos</a>
+                    </div>
+                    <br><br>
+                    <div class="font-weight-bold mt-2">
+                        <p>Síguenos en:</p>
+                    </div>
+                    <div class="redes-sociales d-flex flex-wrap justify-content-center">
+                        <div class="red facebook p-2 mr-3">
+                            <a class="text-white" href="https://www.facebook.com/MARCA" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="red twitter p-2 mr-3">
+                            <a class="text-white" href="https://twitter.com/marca" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="red google-plus p-2 mr-3">
+                            <a class="text-white" href="https://plus.google.com/+DiarioMARCA/posts" target="_blank" title="Google Plus"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <div class="red rss p-2 mr-3">
+                            <a class="text-white" href="http://www.marca.com/deporte/rss/" target="_blank" title="RSS"><i class="fas fa-rss"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

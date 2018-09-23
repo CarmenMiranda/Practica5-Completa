@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+
+nav, .main{
+    width: 90%;
+}
+
+.barra-categorias .menu-izquierdo .categoria:hover{
+    background-color: #141d25;
+}
+
+.barra-categorias .menu-izquierdo .categoria:hover a{
+    color: #fff !important;
+}
+
+.barra-categorias .menu-izquierdo .categoria a:hover{
+    text-decoration: none;
+}
+
+.barra-categorias .menu-izquierdo .categoria .menu{
+    top: 100%;
+    left: 0;
+    width: 300px;
+    padding: 20px;
+    z-index: 100;
+}
+
+.barra-categorias .menu-izquierdo .categoria:hover .menu{
+    display: block !important;
+}
+
+.barra-categorias .menu-izquierdo .categoria .menu a:hover{
+    color: #c00 !important;
+}
+
+.text-danger{
+    color: #c00 !important;
+}
+
+.btn-danger, .bg-danger{
+    background-color: #c00 !important;
+}
+
+#btnIniciaSesion{
+    border: 1px solid #e2e2e2;
+    background-color: #fff !important;
+}
+
+#btnIniciaSesion:hover, #btnSuscribete:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #000 !important;
+}
+
+.search{
+    width: 35%;
+}
+
+/*MAIN*/
+
+.comercial{
+    height: 13.5vh;
+}
+
+/*FOOTER*/
+
+footer .superior .titulo{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .superior .contenido .subtitulo{
+    color: #fff;
+}
+
+footer .superior .contenido ul{
+    list-style-type: none;
+
+}
+
+footer .superior .contenido ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .superior .contenido ul li a:hover{
+    color: #888888;
+}
+
+footer .inferior .redes-sociales .red{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+footer .inferior .redes-sociales .facebook{
+    background-color: #3b5998;
+}
+
+footer .inferior .redes-sociales .twitter{
+    background-color: #1da1f2;
+}
+
+footer .inferior .redes-sociales .google-plus{
+    background-color: #dd4b39;
+}
+
+footer .inferior .redes-sociales .rss{
+    background-color: #f26522;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1024px) {
+    /*HEADER*/
+    #primerMenu{
+        padding: 10px 0;
+    }
+    
+    #primeraBarra .menu-izquierdo a .descripcionRadio{
+        margin-right: 3px !important;
+    }
+
+    #primeraBarra .menu-izquierdo a .descripcionLigaF{
+        padding-left: 10px !important;
+    }
+
+    #btnSuscribete{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+    .search{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 888px) {
+    /*HEADER*/
+    .search{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 770px){
+    /*HEADER*/
+    #primeraBarra .menu-izquierdo a{
+        width: 50%;
+    }
+
+    .barra-categorias .menu-izquierdo .categoria .menu{
+        width: 160px;
+        z-index: 100;
+    }
+
+    /*MAIN*/
+    .comercial{
+        height: 7.5vh;
+    }
+}
