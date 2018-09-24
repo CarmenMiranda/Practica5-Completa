@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'footer.css';
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+
+nav{
+    width: 90%;
+}
+
+.barra-categorias .menu-izquierdo .categoria:hover{
+    background-color: #141d25;
+}
+
+.barra-categorias .menu-izquierdo .categoria:hover a{
+    color: #fff !important;
+}
+
+.barra-categorias .menu-izquierdo .categoria a:hover{
+    text-decoration: none;
+}
+
+.barra-categorias .menu-izquierdo .categoria .menu{
+    top: 100%;
+    left: 0;
+    width: 300px;
+    padding: 20px;
+    z-index: 100;
+}
+
+.barra-categorias .menu-izquierdo .categoria:hover .menu{
+    display: block !important;
+}
+
+.barra-categorias .menu-izquierdo .categoria .menu a:hover{
+    color: #c00 !important;
+}
+
+.text-danger{
+    color: #c00 !important;
+}
+
+.btn-danger, .bg-danger{
+    background-color: #c00 !important;
+}
+
+#primeraBarra div.search{
+    border-radius: 50%;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+}
+
+#primeraBarra div.search:hover{
+    background-color: #000;
+}
+
+#primeraBarra div.search a{
+    color: #000;
+}
+
+#primeraBarra div.search:hover a{
+    color: #fff;
+}
+
+#btnIniciaSesion{
+    border: 1px solid #e2e2e2;
+    background-color: #fff !important;
+}
+
+#btnIniciaSesion:hover, #btnSuscribete:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #000 !important;
+}
+
+.main{
+    width: 70%;
+}
+
+.segundoMenu{
+    width: 85%;
+}
+
+.segundoMenu .champions{
+    font-size: 20px;
+}
+
+.segundoMenu a{
+    text-decoration: none;
+}
+
+.segundoMenu .seccion1 a:hover{
+    color: rgba(255,255,255,0.5) !important;
+}
+
+.segundoMenu .seccion2:hover{
+    background-color: #7a0000;
+}
+
+/*MAIN*/
+
+.comercial{
+    height: 13.5vh;
+}
+
+
+.headerNota .titulo{
+    font-size: 50px;
+}
+
+.headerNota .subtitulo{
+    font-size: 20px;
+}
+
+.headerNota .subtitulo i{
+    font-size: 10px;
+}
+
+.headerNota .autores-fecha-compartir .compartir div{
+    border-radius: 50%;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+}
+
+.headerNota .autores-fecha-compartir .compartir .facebook{
+    border: 1px solid #3b5998;
+}
+
+.headerNota .autores-fecha-compartir .compartir .facebook a{
+    color: #3b5998;
+}
+
+.headerNota .autores-fecha-compartir .compartir .facebook:hover{
+    background-color: #3b5998;
+}
+
+.headerNota .autores-fecha-compartir .compartir .facebook:hover a,
+.headerNota .autores-fecha-compartir .compartir .twitter:hover a,
+.headerNota .autores-fecha-compartir .compartir .correo:hover a{
+    color: #fff !important;
+}
+
+.headerNota .autores-fecha-compartir .compartir .twitter{
+    border: 1px solid #55acee;
+}
+
+.headerNota .autores-fecha-compartir .compartir .twitter a,
+.headerNota .autores-fecha-compartir .autores a{
+    color: #55acee;
+}
+
+.headerNota .autores-fecha-compartir .compartir .twitter:hover{
+    background-color: #55acee;
+}
+
+.headerNota .autores-fecha-compartir .compartir .correo{
+    border: 1px solid #000;
+}
+
+.headerNota .autores-fecha-compartir .compartir .correo a{
+    color: #000;
+}
+
+.headerNota .autores-fecha-compartir .compartir .correo:hover{
+    background-color: #000;
+}
+
+.nota .botones a{
+    border-radius: 10px;
+}
+
+.nota .botones a.idioma{
+    background-color: rgba(62,83,99,0.15);
+}
+
+.nota .botones a.comentar{
+    text-decoration: none;
+}
+
+.nota p{
+    font-size: 20px;
+}
+
+.nota .primerParrafo::first-letter {
+    font-size: 65px;
+    font-weight: bold;
+    float: left;
+    line-height: 90%;
+}
+
+.nota .equipo .titulo{
+    font-size: 28px;
+    color: #3498d8;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1024px) {
+    /*HEADER*/
+    #primerMenu{
+        padding: 10px 0;
+    }
+    
+    #primeraBarra .menu-izquierdo a .descripcionRadio{
+        margin-right: 3px !important;
+    }
+
+    #primeraBarra .menu-izquierdo a .descripcionLigaF{
+        padding-left: 10px !important;
+    }
+
+    #btnSuscribete{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+}
+
+@media screen and (max-width: 888px) {
+    /*HEADER*/
+    .main{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 770px){
+    /*HEADER*/
+    #primeraBarra .menu-izquierdo a{
+        width: 50%;
+    }
+
+    .barra-categorias .menu-izquierdo .categoria .menu{
+        width: 160px;
+        z-index: 100;
+    }
+
+    .segundoMenu .champions a{
+        font-size: 18px !important;
+    }
+    
+    .segundoMenu a{
+        font-size: 14px;
+    }
+
+    /*MAIN*/
+    .comercial{
+        height: 7.5vh;
+    }
+
+    .headerNota .titulo{
+        font-size: 20px;
+    }
+    
+    .headerNota .subtitulo{
+        font-size: 13px;
+    }
+    
+    .headerNota .subtitulo i{
+        font-size: 5px;
+    }
+
+    .headerNota .autores-fecha-compartir .fecha{
+        font-size: 13px;
+    }
+
+    .headerNota .autores-fecha-compartir .compartir div{
+        width: 30px;
+        height: 30px;
+    }
+
+    .nota p{
+        font-size: 15px;
+    }
+    
+    .nota .primerParrafo::first-letter {
+        font-size: 50px;
+        line-height: 80%;
+    }
+
+    .nota .equipo .titulo{
+        font-size: 18px;
+    }
+}
