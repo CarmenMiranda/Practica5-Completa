@@ -174,6 +174,7 @@ nav{
 }
 
 .nota .equipo .titulo{
+    font-size: 28px;
     color: #3498d8;
 }
 
@@ -254,6 +255,10 @@ footer .inferior .redes-sociales .rss{
 
 @media screen and (max-width: 888px) {
     /*HEADER*/
+    .main{
+        width: 90%;
+    }
+
     .search{
         width: 100%;
     }
@@ -270,8 +275,50 @@ footer .inferior .redes-sociales .rss{
         z-index: 100;
     }
 
+    .segundoMenu .champions a{
+        font-size: 18px !important;
+    }
+    
+    .segundoMenu a{
+        font-size: 14px;
+    }
+
     /*MAIN*/
     .comercial{
         height: 7.5vh;
+    }
+
+    .headerNota .titulo{
+        font-size: 20px;
+    }
+    
+    .headerNota .subtitulo{
+        font-size: 13px;
+    }
+    
+    .headerNota .subtitulo i{
+        font-size: 5px;
+    }
+
+    .headerNota .autores-fecha-compartir .fecha{
+        font-size: 13px;
+    }
+
+    .headerNota .autores-fecha-compartir .compartir div{
+        width: 30px;
+        height: 30px;
+    }
+
+    .nota p{
+        font-size: 15px;
+    }
+    
+    .nota .primerParrafo::first-letter {
+        font-size: 50px;
+        line-height: 80%;
+    }
+
+    .nota .equipo .titulo{
+        font-size: 18px;
     }
 }
