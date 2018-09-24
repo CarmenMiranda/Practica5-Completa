@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'footer.css';
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -48,11 +49,20 @@ nav, .main, .barra-categorias{
     background-color: #c00 !important;
 }
 
+#btnIniciaSesion{
+    border: 1px solid #e2e2e2;
+    background-color: #fff !important;
+}
+
 .search{
     width: 35%;
 }
 
 /*MAIN*/
+
+.comercial{
+    height: 13.5vh;
+}
 
 .comercial-dibujo{
     width: 900px;
@@ -87,7 +97,7 @@ nav, .main, .barra-categorias{
 }
 
 .primer-seccion-notas{
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .notaPrincipal a{
@@ -195,56 +205,37 @@ nav, .main, .barra-categorias{
     width: 25%;
 }
 
-/*FOOTER*/
-
-footer .superior .titulo{
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
-}
-
-footer .superior .contenido .subtitulo{
-    color: #fff;
-}
-
-footer .superior .contenido ul{
-    list-style-type: none;
-
-}
-
-footer .superior .contenido ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-
-footer .superior .contenido ul li a:hover{
-    color: #888888;
-}
-
-footer .inferior .redes-sociales .red{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-footer .inferior .redes-sociales .facebook{
-    background-color: #3b5998;
-}
-
-footer .inferior .redes-sociales .twitter{
-    background-color: #1da1f2;
-}
-
-footer .inferior .redes-sociales .google-plus{
-    background-color: #dd4b39;
-}
-
-footer .inferior .redes-sociales .rss{
-    background-color: #f26522;
-}
-
-
 /*MEDIA QUERIES*/
+
+@media screen and (max-width: 1024px) {
+    /*HEADER*/
+    #primerMenu{
+        padding: 10px 0;
+    }
+    
+    #primeraBarra .menu-izquierdo a .descripcionRadio{
+        margin-right: 3px !important;
+    }
+
+    #primeraBarra .menu-izquierdo a .descripcionLigaF{
+        padding-left: 10px !important;
+    }
+
+    #btnSuscribete{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+    .search{
+        width: 30%;
+    }
+
+    /*MAIN*/
+    .enDirecto, .loMejor{
+        width: 38%;
+        margin-top: 10px;
+    } 
+}
 
 @media screen and (max-width: 888px) {
     /*HEADER*/
@@ -260,7 +251,21 @@ footer .inferior .redes-sociales .rss{
 }
 
 @media screen and (max-width: 770px){
+    /*HEADER*/
+    #primeraBarra .menu-izquierdo a{
+        width: 50%;
+    }
+
+    .barra-categorias .menu-izquierdo .categoria .menu{
+        width: 160px;
+        z-index: 100;
+    }
+
     /*MAIN*/
+    .comercial{
+        height: 7.5vh;
+    }
+
     .primer-seccion-notas{
         margin-top: 20px;
     }
@@ -279,10 +284,7 @@ footer .inferior .redes-sociales .rss{
 
     .segunda-seccion-notas .nota,
     .tercer-seccion-notas .nota{
-        width: 80%;
+        width: 100%;
         justify-content: center;
     }
 }
-
-
-

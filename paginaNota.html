@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style-nota.css">
+
+        <title>Práctica B5- Nota- MARCA - Diario deportivo online</title>
+        <link href="img/icono.ico" type="image/ico" rel="icon">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light mx-auto pb-0" id="primerMenu">
+                <a class="navbar-brand" href="index.html"><img src="img/marca-logo-80.png" alt="" height="30"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primeraBarra" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="primeraBarra">
+                    <div class="row w-100">
+                        <div class="col-12 d-flex flex-wrap align-items-center p-0">
+                            <ul class="navbar-nav mh-75 ml-2 my-2 my-md-0">
+                                <li class="nav-item dropdown border rounded">
+                                    <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="img/ESP.jpg" alt="" height="20px"> ES
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item disabled" href="#"><img src="img/ESP.jpg" alt="" height="20px"> ES (España)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/MX.png" alt="" height="20px"> MX (México)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/CO.png" alt="" height="20px"> CO (Colombia)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/AR.png" alt="" height="20px"> AR (Argentina)</a>
+                                        <a class="dropdown-item" href="#"><img src="img/EN.png" alt="" height="20px"> EN (English)</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="barra-categorias d-flex flex-wrap">
+                                <div class="menu-izquierdo d-flex flex-wrap">
+                                    <div class="categoria my-0 mx-2 p-3 position-relative bg-danger">
+                                        <a class="text-white font-weight-bold" href="#">
+                                            Fútbol <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="menu bg-dark d-none position-absolute">
+                                            <a class="text-white" href="#">Action</a> <br>
+                                            <a class="text-white" href="#">Another action</a> <br>
+                                            <a class="text-white" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="categoria my-0 mx-2 p-3 position-relative">
+                                        <a class="text-dark font-weight-bold" href="#">
+                                            Baloncesto <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="menu bg-dark d-none position-absolute">
+                                            <a class="text-white" href="#">Action</a> <br>
+                                            <a class="text-white" href="#">Another action</a> <br>
+                                            <a class="text-white" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="categoria my-0 mx-2 p-3 position-relative">
+                                        <a class="text-dark font-weight-bold" href="#">
+                                            Motor <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="menu bg-dark d-none position-absolute">
+                                            <a class="text-white" href="#">Action</a> <br>
+                                            <a class="text-white" href="#">Another action</a> <br>
+                                            <a class="text-white" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="categoria my-0 mx-2 p-3 position-relative">
+                                        <a class="text-dark font-weight-bold" href="#">
+                                            Polideportivo <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="menu bg-dark d-none position-absolute">
+                                            <a class="text-white" href="#">Action</a> <br>
+                                            <a class="text-white" href="#">Another action</a> <br>
+                                            <a class="text-white" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown mx-2 p-3">
+                                        <a class="text-dark font-weight-bold" href="#" id="masDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Más +
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="masDropdown">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-md-auto search text-center py-1 mx-1"><a href="#"><i class="fas fa-search"></i></a></div>
+                            <button id="btnSuscribete" class="btn btn-danger  mh-75 my-2 my-sm-0 mr-3 ml-4" type="submit">Suscríbete</button>
+                            <button id="btnIniciaSesion" class="btn text-danger  mh-75 my-2 my-sm-0" type="submit">Iniciar sesión</button>
+                        </div>
+                    </div>   
+                </div>
+            </nav>
+            <div class="container-fluid bg-danger p-0">
+                <div class="segundoMenu mx-auto d-flex flex-wrap py-2 align-items-center">
+                    <div class="seccion1 font-weight-bold">
+                        <a href="#" class="text-white"><i class="fas fa-arrow-left"></i> Fútbol</a>
+                    </div>
+                    <div class="seccion1 champions text-white font-weight-bold mx-2">
+                        / <a href="#" class="text-white">Champions League</a> /
+                    </div>
+                    <div class="seccion2 mx-2 p-2"><a href="#" class="text-white" title="Noticias">Noticias</a></div>
+                    <div class="seccion2 mx-2 p-2"><a href="#" class="text-white" title="Resultados">Resultados</a></div>
+                    <div class="seccion2 mx-2 p-2"><a href="#" class="text-white" title="Calendario">Calendario</a></div>
+                    <div class="seccion2 mx-2 p-2"><a href="#" class="text-white" title="Fase de Grupos">Fase de Grupos</a></div>
+                    <div class="seccion2 mx-2 p-2"><a href="#" class="text-white" title="Fase Previa">Fase Previa</a></div>
+                    <div class="seccion2 mx-2 p-2"><a href="#" class="text-white" title="Palmarés">Palmarés</a></div>
+                    <div class="ml-md-auto"><a href="#"title="Patrocinio">Patrocinio</a></div> 
+                </div>
+            </div>
+        </header>
+
+        <section class="main mx-auto">
+            <div class="comercial mx-auto d-flex justify-content-center mb-3 mt-3 mt-md-4">
+                <img src="img/paginaPrincipal/comercial.PNG" alt="" width="72%">
+            </div>
+            <div class="headerNota">
+                <div class="subtitulo">
+                    <strong>Champions League </strong> <i class="fas fa-circle text-danger align-middle"></i> Descubre a los grandes favoritos para reinar este año en Europa
+                </div>
+                <div class="titulo font-weight-bold">
+                    Los onces de los candidatos a la Champions
+                </div>
+                <div class="autores-fecha-compartir d-flex flex-wrap border-top border-bottom py-2 my-2">
+                    <div class="autores py-1">
+                        <a href="#">Rubén Jimenez <i class="fab fa-twitter"></i></a> | 
+                        <a href="#">Enrique Medina <i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="fecha ml-md-auto py-1">
+                        22/08/2018 | <strong>23:01 <abbr title="Central European Summer Time">CEST</abbr></strong> 
+                    </div>
+                    <div class="compartir d-flex flex-wrap ml-3">
+                        <div class="facebook text-center py-1 mx-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                        <div class="twitter text-center py-1 mx-1"><a href="#"><i class="fab fa-twitter"></i></a></div>
+                        <div class="correo text-center py-1 mx-1"><a href="#"><i class="fas fa-envelope"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nota row">
+                <div class="col-md-4 col-12">
+                    <div class="sticky-top pt-0 pt-md-2">
+                        <div class="botones d-flex flex-wrap my-2">
+                            <a href="#" class="idioma p-2 d-flex flex-wrap mx-md-2 mr-1 text-dark font-weight-bold align-items-center"> 
+                                <img class="mx-md-2" src="img/banderasIngles.png" alt="" width="30px" height="30px">
+                                In English
+                            </a>
+                            <a href="#" class="comentar text-white bg-danger p-2 d-flex flex-wrap align-items-center">
+                                <div class="comentarios mr-2 mr-md-4"><i class="fas fa-comment-alt"></i> 505</div>
+                                Comentar <i class="fas fa-angle-right m-2"></i>
+                            </a>
+                        </div>
+                        <img src="https://st3.depositphotos.com/2535571/18200/v/1600/depositphotos_182000270-stock-illustration-commercial-light-vertical-billboard.jpg" class="mb-3 d-none d-md-inline"alt="" width="100%">
+
+                    </div>
+                </div>
+                <div class="col-md-8 col-12">
+                    <img src="img/paginaPrincipal/notaPrincipal-onceChampions.jpg" alt="" width="100%" class="mb-5">
+                    <hr class="mt-3">
+                    <p class="primerParrafo border-top border-bottom text-justify py-3">
+                        Con el sorteo de Champions a una semana de distancia en el calendario, los grandes de Europa tienen más que perfilados sus onces 
+                        para asaltar el inexpugnable trono del Real Madrid. Serios aspirantes que compiten por tener el mejor equipo del continente, con 
+                        algunos refuerzos de renombre y otros onces en los que apenas se han hecho un par de retoques.
+                    </p>
+                    <div class="equipo mb-md-5 mb-3">
+                        <h3 class="titulo">Real Madrid: el campeón, a por una gesta de otra época</h3>
+                        <img src="img/paginaNota/realMadrid.jpg" alt="" width="100%">
+                        <p class="border-top border-bottom py-3 mt-4">
+                            <strong>Lo mejor: </strong> La base del equipo es la misma que ha ganado tres Champions seguidas, cuatro de las últimas cinco 
+                            ediciones. La competitividad, el hambre y la experiencia en la competición está fuera de toda duda para unos jugadores que han 
+                            arrasado año tras año en Europa. La gesta sería de otro planeta y de otra época. 
+                            <br><br>
+                            <strong>Lo peor: </strong>La salida de Cristiano Ronaldo deja al Real Madrid huérfano de goles y de un líder, el hombre que se 
+                            echó el equipo a las espaldas en los momentos difíciles de las pasadas ediciones para que el barco blanco amarrase siempre en 
+                            la costa del éxito.
+                        </p>
+                    </div>
+                    <div class="equipo mb-md-5 mb-3">
+                        <h3 class="titulo">Barcelona: Messi quiere volver a reinar</h3>
+                        <img src="img/paginaNota/barcelona.jpg" alt="" width="100%">
+                        <p class="border-top border-bottom py-3 mt-4">
+                            <strong>Lo mejor: </strong> Coutinho ya está asentado y, este año sí, podrá ayudar en Champions. 
+                            El palo ante la Roma también sirve de escarmiento para un equipo que lleva demasiados años viendo desde lejos cómo el eterno 
+                            rival triunfa. Con Messi enrabietado tras el fiasco del Mundial, el Barça aspira a recuperar el trono.
+                            <br><br>
+                            <strong>Lo peor: </strong>La pesadilla del Olímpico dejó claro que el equipo es inconsistente y, más allá de la contratación 
+                            de Vidal, el resto de incorporaciones no tienen experiencia Champions como para hacerse con los mandos de la situación en un 
+                            momento complicado. Si Messi no está a su mejor nivel, el equipo sufre, y Suárez no ha arrancado de la mejor manera el curso.
+                        </p>
+                    </div>
+                    <div class="equipo mb-md-5 mb-3">
+                        <h3 class="titulo">Atlético de Madrid: inversión para dar el último paso</h3>
+                        <img src="img/paginaNota/atleticoDeMadrid.jpg" alt="" width="100%">
+                        <p class="border-top border-bottom py-3 mt-4">
+                            <strong>Lo mejor: </strong> La final se juega en el Metropolitano y eso es un plus de ilusión para un equipo que se ha fijado como 
+                            objetivo quitarse la obsesión con la Champions en su propia casa. El club ha realizado una fuerte inversión para rodear a Griezmann 
+                            de grandes jugadores como Lemar, Rodrigo o Gelson. Con el plus que aporta Simeone y un estilo definido, son aspirantes a todo.
+                            <br><br>
+                            <strong>Lo peor: </strong> Precisamente su estilo le jugó una mala pasada el curso anterior. No fue capaz de dominar los encuentros 
+                            ante el Qarabag y eso le condenó a la Europa League. Si ejerce de equipo grande y no se deja sorprender, tendrá mucho ganado. Si en 
+                            el plano psicológico no pesan los intentos fallidos del pasado y aparece una nueva mentalidad ganadora, habrá que ver quién les elimina.
+                        </p>
+                    </div>
+                    <div class="equipo mb-md-5 mb-3">
+                        <h3 class="titulo">Juventus: el 'Rey' para reinar en Europa</h3>
+                        <img src="img/paginaNota/Juventus.jpg" alt="" width="100%">
+                        <p class="border-top border-bottom py-3 mt-4">
+                            <strong>Lo mejor: </strong> No hay duda. Si algo tiene esta Juventus que la haga diferencial en la máxima competición europea 
+                            ese es Cristiano Ronaldo. Una evidencia que tiene en los datos su mejor argumento: ha sido el máximo realizador en las últimas 
+                            cinco ediciones de la Champions League. La <i>Vecchia Signora </i>este año quiere alzar un título que no conquista desde hace 22 años. 
+                            Una ambición compartida con Cristiano que hacen de los <i>bianconeri </i>claros candidatos.
+                            <br><br>
+                            <strong>Lo peor: </strong> En la <i>Vecchia Signora </i>puede haber varios factores que supongan un arma de doble filo. El primero de 
+                            ellos puede ser la presión añadida que tiene el equipo con la llegada de Cristiano y el objetivo de conquistar una Champions 
+                            que parece casi una obsesión en Turín. El segundo aspecto puede ser la centralización de CR7 en el juego. El equipo <i>bianconero </i> 
+                            ya demostró en la primera jornada de Serie A que tiene más argumentos que el portugués en ataque y que la búsqueda incesante en 
+                            el '7' puede pasarles factura.
+                        </p>
+                    </div>
+                    <div class="equipo mb-md-5 mb-3">
+                        <h3 class="titulo">Manchester City: la asignatura pendiente de Guardiola</h3>
+                        <img src="img/paginaNota/manchesterCity.jpg" alt="" width="100%">
+                        <p class="border-top border-bottom py-3 mt-4">
+                            <strong>Lo mejor: </strong> Guardiola y el City son, posiblemente, uno de los equipos que mejor fútbol procesa en el Viejo 
+                            Continente. Un hecho que no han podido demostrar todavía en la máxima competición europea. Extender su hegemonía más allá de 
+                            las Islas es la asignatura pendiente de un proyecto <i>citizen</i> que sigue forjándose con contrataciones que elevan, aún más si cabe, 
+                            el nivel, como Mahrez y, sobretodo, con la continuidad de un técnico que ha implementado una filosofía de juego que parece ir 
+                            siempre un paso más allá del fútbol actual.
+                            <br><br>
+                            <strong>Lo peor: </strong>Si por algo la Champions se le resiste a Guardiola y al Manchester City es por algo que se escapa 
+                            del rectángulo de juego. Una variable intrínseca que va más allá del balón. La mentalidad. Un aspecto casi o más importante 
+                            que el puramente futbolístico. Una barrea psicológica en Europa difícil de romper. En lo que al esférico se refiere, una de 
+                            las problemáticas más importantes que tiene ante sí Pep es el hecho de aprender a jugar sin ser protagonista. Porque más allá 
+                            de Inglaterra el City no podrá dominar todos los partidos. Encontrar más variantes en el juego será necesario si el Manchester 
+                            City no quiere repetir la historia de siempre.
+                        </p>
+                    </div>
+                    <div class="equipo mb-md-5 mb-3">
+                        <h3 class="titulo">Liverpool: mejor bloque, mismo sueño</h3>
+                        <img src="img/paginaNota/liverpool.jpg" alt="" width="100%">
+                        <p class="border-top border-bottom py-3 mt-4">
+                            <strong>Lo mejor: </strong> Todo indica que lo ocurrido el año pasado no fue casualidad. El finalista de la última Champions 
+                            volverá en esta nueva edición como gran candidato al título. No es para menos. Klopp ha logrado retener a todas sus perlas, 
+                            sobretodo al tridente atacante (Mané-Firmino-Salah) y, además, ha sumado nuevas piezas de nivel como Alisson, Naby Keïta, 
+                            Fabinho o Shaqiri. Una plantilla mejorada, con profundidad y que mantiene un estilo que sabe adaptarse a cualquier situación 
+                            de partido. Un proyecto continuista y exitoso como el de Klopp siempre es favorito a hacer algo grande.
+                            <br><br>
+                            <strong>Lo peor: </strong> La incógnita en los <i>reds</i> será saber si el nivel superlativo que mostraron jugadores como Salah o 
+                            Mané se mantiene esta temporada. Repetir el rendimiento de la anterior campaña y las dudas en defensa, pueden ser los dos 
+                            únicos "peros" de un equipo que, además, parece tener un objetivo más claro como es la conquista de la Premier League.
+                        </p>
+                    </div>
+                    <div class="equipo mb-md-5 mb-3">
+                        <h3 class="titulo">PSG: el gran reto de Neymar, Cavani y Mbappé</h3>
+                        <img src="img/paginaNota/parisSaintGermain.jpg" alt="" width="100%">
+                        <p class="border-top border-bottom py-3 mt-4">
+                            <strong>Lo mejor: </strong> Un equipo de ensueño diseñado por y para conquistar la Champions League. Este año no han hecho 
+                            falta grandes incorporaciones. Buffon ha llegado para dotar de experiencia y liderazgo a un combinado que rebosa calidad por 
+                            metro cuadrado. Con la lección de los últimos años aprendida y con jugadores de talla mundial como Neymar o Mbappé el PSG 
+                            parte como gran favorito a conquistar el sueño que siguen anhelando bajo la Torre Eiffel.
+                            <br><br>
+                            <strong>Lo peor: </strong>Los grandes equipos y los grandes jugadores se demuestran en las grandes citas. Y, por el momento, 
+                            ni el equipo ni las figuras de éste han hecho acto de presencia cuando se les ha requerido. Un hecho que puede agravarse en 
+                            el tiempo si no se erige un líder que se eche el equipo a la espalda. En la búsqueda de ese líder pueden volver a surgir 
+                            roces entre los <i>gallos</i> del corral. Tuchel deberá corregir todo ello si quieren escribir un nuevo capítulo en la historia del PSG.
+                        </p>
+                    </div>
+                    <div class="equipo mb-md-5 mb-3">
+                        <p class="titulo">Bayern: el gigante bávaro siempre es candidato</p>
+                        <img src="img/paginaNota/bayernDeMunich.jpg" alt="" width="100%">
+                        <p class="border-top border-bottom py-3 mt-4">
+                            <strong>Lo mejor: </strong> La vieja guardia sigue en primer línea en Múnich. Los Robben o Ribery parecen tener la vitalidad 
+                            necesaria para competir con los mejores. Además, ha llegado Goretzka para reforzar la medular germana y han retornado jóvenes 
+                            promesas como Renato Sanches o Gnabry. Con Kovac en el banquillo buscarán mantener la eficiencia de la que hacen gala año 
+                            tras año. La maquinaria alemana no suele flaquear en Europa, llegar a las rondas finales es costumbre y este año no quieren 
+                            fallar a la tradición. Dar un paso más y volver a reinar en el Viejo Continente es una posibilidad real.
+                            <br><br>
+                            <strong>Lo peor: </strong>La escasez de fichajes de primer nivel este verano deja la plantilla germana corta de efectivos en 
+                            lo que se refiere al once. Mantener un bloque corto de efectivos puede ser un arma de doble filo si hay lesiones. La necesidad 
+                            de dar relevo a los puntales del equipo puede suponer un problema cuando el nivel de estos baje y se necesiten refuerzos que 
+                            den la talla en la máxima competición europea. Jugadores, de los que en este momento el Bayern no dispone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="superior bg-dark">
+                <div class="container pt-3">
+                    <div class="titulo">
+                        Otras webs de Unidad Editorial
+                    </div>
+                    <hr class="bg-white">
+                    <div class="contenido row">
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Marca</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="http://www.marca.com/mundo-marca/2017/01/18/587f574fe2704e47368b45ff.html" title="App Marca">App Marca</a></li>
+                                    <li><a href="https://deportes.marcaapuestas.es/es" title="Apuestas Deportivas">Apuestas Deportivas</a></li>
+                                    <li><a href="http://www.marca.com/futbol/primera/clasificacion.html" title="Clasificación LaLiga">Clasificación LaLiga</a></li>
+                                    <li><a href="http://www.marca.com/futbol/primera/calendario.html" title="Calendario LaLiga">Calendario LaLiga</a></li>
+                                    <li><a href="http://www.marca.com/hemeroteca/" title="Hemeroteca Marca">Hemeroteca Marca</a></li>
+                                    <li><a href="https://esports.marca.com/" title="Marca eSports">Marca eSports</a></li>
+                                    <li><a href="http://app.marca.com/Estadisticas/JuegosMunicipales/Controlador" title="Marca Madrid">Marca Madrid</a></li>
+                                    <li><a href="https://clk.tradedoubler.com/click?p=271538&amp;a=2407712&amp;g=23657338" title="Marca en Orbyt">Marca en Orbyt</a></li>
+                                    <li><a href="https://clk.tradedoubler.com/click?p=286063&amp;a=2407712&amp;g=24123938" title="Zona Marca">Zona Marca</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Ocio y Moda</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="http://www.marca.com/tiramillas.html" title="Tiramillas">Tiramillas</a></li>
+                                    <li><a href="http://www.telva.com/" title="Moda - Telva">Moda - Telva</a></li>
+                                    <li><a href="http://www.buhomag.com/" title="BUHO Magazine">BUHO Magazine</a></li>
+                                    <li><a href="http://www.elmundo.es/traductor/" title="Traductor">Traductor</a></li>
+                                    <li><a href="http://www.elmundo.es/television/programacion-tv/" title="Programación TV">Programación TV</a></li>
+                                    <li><a href="https://www.marcaentradas.com/" title="Marca Entradas">Marca Entradas</a></li>
+                                    <li><a href="http://www.mibebeyyo.com/" title="Mi bebé y yo">Mi bebé y yo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Unidad Editorial</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="http://www.elmundo.es/" title="El Mundo">El Mundo</a></li>
+                                    <li><a href="http://www.expansion.com/" title="Expansión">Expansión</a></li>
+                                    <li><a href="https://cuidateplus.marca.com/" title="CuídatePlus">CuídatePlus</a></li>
+                                    <li><a href="http://www.diariomedico.com/" title="Diario Médico">Diario Médico</a></li>
+                                    <li><a href="http://www.correofarmaceutico.com/" title="Correo Farmacéutico">Correo Farmacéutico</a></li>
+                                    <li><a href="http://suscripcion.marca.com/" title="Suscripción Marca">Suscripción Marca</a></li>
+                                    <li><a href="http://suscripcion.elmundo.es/" title="Suscripción El Mundo">Suscripción El Mundo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="subtitulo font-weight-bold">Formación y Empleo</div>
+                            <div class="lista">
+                                <ul class="p-0">
+                                    <li><a href="https://www.escuelaunidadeditorial.es/" title="Escuela Unidad Editorial">Escuela Unidad Editorial</a></li>
+                                    <li><a href="http://www.unidadeditorial.es/" title="Unidad Editorial">Unidad Editorial</a></li>
+                                    <li><a href="http://www.expansion.com/expansion-empleo.html" title="Expansión y Empleo">Expansión y Empleo</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inferior" style="background-color: #eeeeee;">
+                <div class="container text-center py-5">
+                    <div class="derechos font-weight-bold">
+                        <p>© Agosto 2018 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="links">
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/aviso-legal.html" title="Términos y condiciones de uso">Términos y condiciones de uso</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/proteccion-datos.html" title="Política de privacidad">Política de privacidad</a>
+                        <a class="mr-3 text-dark" href="http://cookies.unidadeditorial.es/" title="Política de cookies">Política de cookies</a>
+                        <a class="mr-3 text-dark" href="http://www.ojd.es/" title="Certificado por OJD">Certificado por OJD</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/contacto.html" title="Contacto">Contacto</a>
+                        <a class="mr-3 text-dark" href="http://www.unidadeditorial.com/publicidad" title="Publicidad">Publicidad</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/ayuda.html" title="Ayuda">Ayuda</a>
+                        <a class="mr-3 text-dark" href="http://www.marca.com/corporativo/el_equipo.html" title="Nuestro equipo">Nuestro equipo</a>
+                        <a class="mr-3 text-dark" href="https://www.uesyndication.com/" title="Venta de contenidos">Venta de contenidos</a>
+                    </div>
+                    <br><br>
+                    <div class="font-weight-bold mt-2">
+                        <p>Síguenos en:</p>
+                    </div>
+                    <div class="redes-sociales d-flex flex-wrap justify-content-center">
+                        <div class="red facebook p-2 mr-3">
+                            <a class="text-white" href="https://www.facebook.com/MARCA" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="red twitter p-2 mr-3">
+                            <a class="text-white" href="https://twitter.com/marca" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="red google-plus p-2 mr-3">
+                            <a class="text-white" href="https://plus.google.com/+DiarioMARCA/posts" target="_blank" title="Google Plus"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <div class="red rss p-2 mr-3">
+                            <a class="text-white" href="http://www.marca.com/deporte/rss/" target="_blank" title="RSS"><i class="fas fa-rss"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
