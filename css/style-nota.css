@@ -6,7 +6,7 @@
 
 /*HEADER*/
 
-nav, .main{
+nav{
     width: 90%;
 }
 
@@ -57,14 +57,124 @@ nav, .main{
     border-color: #000 !important;
 }
 
-.search{
-    width: 35%;
+.main{
+    width: 70%;
+}
+
+.segundoMenu{
+    width: 85%;
+}
+
+.segundoMenu .champions{
+    font-size: 20px;
+}
+
+.segundoMenu a{
+    text-decoration: none;
+}
+
+.segundoMenu .seccion1 a:hover{
+    color: rgba(255,255,255,0.5) !important;
+}
+
+.segundoMenu .seccion2:hover{
+    background-color: #7a0000;
 }
 
 /*MAIN*/
 
 .comercial{
     height: 13.5vh;
+}
+
+
+.headerNota .titulo{
+    font-size: 50px;
+}
+
+.headerNota .subtitulo{
+    font-size: 20px;
+}
+
+.headerNota .subtitulo i{
+    font-size: 10px;
+}
+
+.headerNota .autores-fecha-compartir .compartir div{
+    border-radius: 50%;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+}
+
+.headerNota .autores-fecha-compartir .compartir .facebook{
+    border: 1px solid #3b5998;
+}
+
+.headerNota .autores-fecha-compartir .compartir .facebook a{
+    color: #3b5998;
+}
+
+.headerNota .autores-fecha-compartir .compartir .facebook:hover{
+    background-color: #3b5998;
+}
+
+.headerNota .autores-fecha-compartir .compartir .facebook:hover a,
+.headerNota .autores-fecha-compartir .compartir .twitter:hover a,
+.headerNota .autores-fecha-compartir .compartir .correo:hover a{
+    color: #fff !important;
+}
+
+.headerNota .autores-fecha-compartir .compartir .twitter{
+    border: 1px solid #55acee;
+}
+
+.headerNota .autores-fecha-compartir .compartir .twitter a,
+.headerNota .autores-fecha-compartir .autores a{
+    color: #55acee;
+}
+
+.headerNota .autores-fecha-compartir .compartir .twitter:hover{
+    background-color: #55acee;
+}
+
+.headerNota .autores-fecha-compartir .compartir .correo{
+    border: 1px solid #000;
+}
+
+.headerNota .autores-fecha-compartir .compartir .correo a{
+    color: #000;
+}
+
+.headerNota .autores-fecha-compartir .compartir .correo:hover{
+    background-color: #000;
+}
+
+.nota .botones a{
+    border-radius: 10px;
+}
+
+.nota .botones a.idioma{
+    background-color: rgba(62,83,99,0.15);
+}
+
+.nota .botones a.comentar{
+    text-decoration: none;
+}
+
+.nota p{
+    font-size: 20px;
+}
+
+.nota .primerParrafo::first-letter {
+    font-size: 65px;
+    font-weight: bold;
+    float: left;
+    line-height: 90%;
+}
+
+.nota .equipo .titulo{
+    color: #3498d8;
 }
 
 /*FOOTER*/
