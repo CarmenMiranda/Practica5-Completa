@@ -46,6 +46,25 @@ nav{
     background-color: #c00 !important;
 }
 
+#primeraBarra div.search{
+    border-radius: 50%;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+}
+
+#primeraBarra div.search:hover{
+    background-color: #000;
+}
+
+#primeraBarra div.search a{
+    color: #000;
+}
+
+#primeraBarra div.search:hover a{
+    color: #fff;
+}
+
 #btnIniciaSesion{
     border: 1px solid #e2e2e2;
     background-color: #fff !important;
@@ -248,19 +267,12 @@ footer .inferior .redes-sociales .rss{
         margin-right: 5px !important;
     }
 
-    .search{
-        width: 30%;
-    }
 }
 
 @media screen and (max-width: 888px) {
     /*HEADER*/
     .main{
         width: 90%;
-    }
-
-    .search{
-        width: 100%;
     }
 }
 
